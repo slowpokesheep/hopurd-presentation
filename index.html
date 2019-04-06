@@ -31,43 +31,216 @@
           ### Daytrips
         </section>
         <section data-markdown>
+          ## tt
+          ---
+          <pre>
+            <code data-trim>
+              hopur-d
+              |-- gogn
+              |   |-- daytrip.json
+              |   |-- schema.txt
+              |   `-- temp.json
+              |-- lib
+              |   |-- Bcrypt.jar
+              |   |-- commons-lang3-3.8.1.jar
+              |   |-- hamcrest-core-1.3.jar
+              |   |-- javafaker-0.17.2.jar
+              |   |-- json-20180813.jar
+              |   |-- junit-4.12.jar
+              |   |-- postgresql-42.2.5.jar
+              |   `-- snakeyaml-1.24.jar
+              |-- resources
+              |   `-- login.png
+              |-- src
+              |   |-- database
+              |   |   |-- dev
+              |   |   |   |-- companies.json
+              |   |   |   |-- DbTests.java
+              |   |   |   |-- insert backup.txt
+              |   |   |   |-- Insert.java
+              |   |   |   |-- Schema.java
+              |   |   |   `-- trips.json
+              |   |   |-- BookingQueries.java
+              |   |   |-- CompanyQueries.java
+              |   |   |-- DbMain.java
+              |   |   |-- DepartureQueries.java
+              |   |   |-- ReviewQueries.java
+              |   |   |-- TripQueries.java
+              |   |   `-- UserQueries.java
+              |   |-- main
+              |   |   |-- controllers
+              |   |   |   |-- EditTripController.java
+              |   |   |   |-- MainController.java
+              |   |   |   |-- NewReviewController.java
+              |   |   |   `-- NewTripController.java
+              |   |   |-- fxml
+              |   |   |   |-- EditTrip.fxml
+              |   |   |   |-- Main.fxml
+              |   |   |   |-- NewReview.fxml
+              |   |   |   `-- NewTrip.fxml
+              |   |   |-- gui
+              |   |   |   |-- LoginDialog.java
+              |   |   |   `-- MainMenuBar.java
+              |   |   |-- utilities
+              |   |   |   |-- Account.java
+              |   |   |   |-- Language.java
+              |   |   |   |-- UTF8Control.java
+              |   |   |   `-- Utils.java
+              |   |   |-- API.java
+              |   |   `-- Main.java
+              |   |-- models
+              |   |   |-- utils
+              |   |   |   |-- BookingUtils.java
+              |   |   |   |-- CompanyUtils.java
+              |   |   |   |-- DepartureUtils.java
+              |   |   |   |-- ReviewUtils.java
+              |   |   |   |-- TripUtils.java
+              |   |   |   `-- UserUtils.java
+              |   |   |-- Booking.java
+              |   |   |-- Company.java
+              |   |   |-- Departure.java
+              |   |   |-- Enums.java
+              |   |   |-- JSON.java
+              |   |   |-- Review.java
+              |   |   |-- Trip.java
+              |   |   `-- User.java
+              |   |-- tests
+              |   |   |-- TestJunit.java
+              |   |   |-- TestRunner.java
+              |   |   `-- TestTripUtils.java
+              |   |-- languages_is.properties
+              |   `-- languages.properties
+              |-- hopurd.iml
+              `-- README.md
+            </code>
+          </pre>
+        </section>
+        <section>
+          <section data-markdown>
+            ## API
+            ---
+            - asdasd
+            
+          </section>
+          <section>
+              <blockquote>
+                As a businessman, I want to able to find trips on a specific time period, because I will only be stopping by for a short time.
+              </blockquote>
+              <pre>
+                <code data-trim>
+                public static ArrayList&ltReview&gt getReviewsByRatingRange(double min, double max, boolean asc) {
+                  if (min < 0.0 || max > 5.0)
+                  throw new IllegalArgumentException("min has to be equal to or larger than 0.0 and max equal to or less than 5.0");
+                  
+                  JSONObject reviewJSON = new JSONObject();
+                  reviewJSON.put(resolveReview(reviewJSONenum.RATINGMIN), min);
+                  reviewJSON.put(resolveReview(reviewJSONenum.RATINGMAX), max);
+                  String ascOrDesc = "asc";
+                  if (!asc) ascOrDesc = "desc";
+                  reviewJSON.put(resolveReview(reviewJSONenum.ORDERBY), "rating " + ascOrDesc);
+                  
+                  ArrayList&ltReview&gt reviews = dynamicReviewQuery(reviewJSON);
+                    return reviews;
+                }
+                </code>
+              </pre>
+            </section>
+            <section>
+                <blockquote>
+                    As a tourist, I want to be able to select the type of tour right away, because I don’t want to scroll through tours that don’t interest me at all.
+                </blockquote>
+                <pre>
+                  <code data-trim>
+                    public static ArrayList&ltReview&gt getPublicReviews() {
+                        JSONObject reviewJSON = new JSONObject();
+                        reviewJSON.put(resolveReview(reviewJSONenum.ISPUBLIC), "true");
+                        reviewJSON.put(resolveReview(reviewJSONenum.ORDERBY), "created desc");
+                    
+                        ArrayList&ltReview&gt reviews = dynamicReviewQuery(reviewJSON);
+                        return reviews;
+                      }
+                  </code>
+                </pre>
+              </section>
+        </section>
+        <section>
+          <section data-markdown>
+            ## GUI
+            ---<section data-markdown>
+                <script type="text/template">
+                  ## Login
+                  ---
+                  <img data-src="./lib/images/login-hq.gif" height="600"/>
+                </script>
+              </section>
+              <section data-markdown>
+              <script type="text/template">
+                ## Settings
+                ---
+                <img data-src="./lib/images/settings-hq.gif" height="600"/>
+              </script>
+              </section>
+              <section data-markdown>
+                <script type="text/template">
+                  ## New Review
+                  ---
+                  <img data-src="./lib/images/newreview-hq.gif" height="600"/>
+                </script>
+              </section>
+              <section data-markdown>
+                <script type="text/template">
+                  ## New Trip
+                  ---
+                  <img data-src="./lib/images/newtrip-hq.gif" height="600"/>
+                </script>
+              </section>
+              <section data-markdown>
+                <script type="text/template">
+                  ## Edit Trip
+                  ---
+                  <img data-src="./lib/images/edittrip-hq.gif" height="600"/>
+                </script>
+              </section>
+          </section>
+          <section data-markdown>
             <script type="text/template">
               ## Login
               ---
-              <img data-src="./lib/images/login-hq.gif"/>
+              <img data-src="./lib/images/login-hq.gif" height="600"/>
+            </script>
+          </section>
+          <section data-markdown>
+          <script type="text/template">
+            ## Settings
+            ---
+            <img data-src="./lib/images/settings-hq.gif" height="600"/>
           </script>
-        </section>
-        <section data-markdown>
-            <script type="text/template">
-              ## Settings
-              ---
-              <img data-src="./lib/images/settings-hq.gif"/>
-          </script>
-        </section>
-        <section data-markdown>
+          </section>
+          <section data-markdown>
             <script type="text/template">
               ## New Review
               ---
-              <img data-src="./lib/images/newreview-hq.gif"/>
-          </script>
-        </section>
-        <section data-markdown>
+              <img data-src="./lib/images/newreview-hq.gif" height="600"/>
+            </script>
+          </section>
+          <section data-markdown>
             <script type="text/template">
               ## New Trip
               ---
-              <img data-src="./lib/images/newtrip-hq.gif"/>
-          </script>
-        </section>
-        <section data-markdown>
+              <img data-src="./lib/images/newtrip-hq.gif" height="600"/>
+            </script>
+          </section>
+          <section data-markdown>
             <script type="text/template">
               ## Edit Trip
               ---
-              <img data-src="./lib/images/edittrip-hq.gif"/>
-          </script>
+              <img data-src="./lib/images/edittrip-hq.gif" height="600"/>
+            </script>
+          </section>
         </section>
 			</div>
 		</div>
-
+    
 		<script src="js/reveal.js"></script>
 
 		<script>
@@ -75,13 +248,20 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
+        width: "100%",
+        margin: 0.01,
+        theme: Reveal.getQueryHash().theme || 'default',
+        // Transition style
+        transition: Reveal.getQueryHash().transition || 'default',
+        // Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+          { src: 'plugin/highlight/highlight.js', async: true },
 				]
-			});
-		</script>
-	</body>
+      });
+    </script>
+  </body>
 </html>
