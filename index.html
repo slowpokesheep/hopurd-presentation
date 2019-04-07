@@ -29,139 +29,160 @@
           ## Group-D
           ---
           ### Daytrips
+          [GitHub](https://github.com/nachos5/hopur-d)
         </section>
         <section data-markdown>
-          ## tt
+          ## Group members
           ---
-          <pre>
-            <code data-trim>
-              hopur-d
-              |-- gogn
-              |   |-- daytrip.json
-              |   |-- schema.txt
-              |   `-- temp.json
-              |-- lib
-              |   |-- Bcrypt.jar
-              |   |-- commons-lang3-3.8.1.jar
-              |   |-- hamcrest-core-1.3.jar
-              |   |-- javafaker-0.17.2.jar
-              |   |-- json-20180813.jar
-              |   |-- junit-4.12.jar
-              |   |-- postgresql-42.2.5.jar
-              |   `-- snakeyaml-1.24.jar
-              |-- resources
-              |   `-- login.png
-              |-- src
-              |   |-- database
-              |   |   |-- dev
-              |   |   |   |-- companies.json
-              |   |   |   |-- DbTests.java
-              |   |   |   |-- insert backup.txt
-              |   |   |   |-- Insert.java
-              |   |   |   |-- Schema.java
-              |   |   |   `-- trips.json
-              |   |   |-- BookingQueries.java
-              |   |   |-- CompanyQueries.java
-              |   |   |-- DbMain.java
-              |   |   |-- DepartureQueries.java
-              |   |   |-- ReviewQueries.java
-              |   |   |-- TripQueries.java
-              |   |   `-- UserQueries.java
-              |   |-- main
-              |   |   |-- controllers
-              |   |   |   |-- EditTripController.java
-              |   |   |   |-- MainController.java
-              |   |   |   |-- NewReviewController.java
-              |   |   |   `-- NewTripController.java
-              |   |   |-- fxml
-              |   |   |   |-- EditTrip.fxml
-              |   |   |   |-- Main.fxml
-              |   |   |   |-- NewReview.fxml
-              |   |   |   `-- NewTrip.fxml
-              |   |   |-- gui
-              |   |   |   |-- LoginDialog.java
-              |   |   |   `-- MainMenuBar.java
-              |   |   |-- utilities
-              |   |   |   |-- Account.java
-              |   |   |   |-- Language.java
-              |   |   |   |-- UTF8Control.java
-              |   |   |   `-- Utils.java
-              |   |   |-- API.java
-              |   |   `-- Main.java
-              |   |-- models
-              |   |   |-- utils
-              |   |   |   |-- BookingUtils.java
-              |   |   |   |-- CompanyUtils.java
-              |   |   |   |-- DepartureUtils.java
-              |   |   |   |-- ReviewUtils.java
-              |   |   |   |-- TripUtils.java
-              |   |   |   `-- UserUtils.java
-              |   |   |-- Booking.java
-              |   |   |-- Company.java
-              |   |   |-- Departure.java
-              |   |   |-- Enums.java
-              |   |   |-- JSON.java
-              |   |   |-- Review.java
-              |   |   |-- Trip.java
-              |   |   `-- User.java
-              |   |-- tests
-              |   |   |-- TestJunit.java
-              |   |   |-- TestRunner.java
-              |   |   `-- TestTripUtils.java
-              |   |-- languages_is.properties
-              |   `-- languages.properties
-              |-- hopurd.iml
-              `-- README.md
-            </code>
-          </pre>
+          Name | Email
+          ------------ | -------------
+          Hjalti Geir Garðarsson | hgg29@hi.is
+          Guðmundur Óli Norland | gon2@hi.is
+          Gunnar Ingi Stefánsson | email@hi.is
+          Jónas G. Sigurðsson | email@hi.is
+        </section>
+        <section data-markdown>
+          ## Project structure
+          ---
+          ```
+          src
+          |-- hopurd
+          |   |-- database
+          |   |   |-- dev
+          |   |   |   |-- companies.json
+          |   |   |   |-- DbTests.java
+          |   |   |   |-- Insert.java
+          |   |   |   |-- Schema.java
+          |   |   |   `-- trips.json
+          |   |   |-- BookingQueries.java
+          |   |   |-- CompanyQueries.java
+          |   |   |-- DbMain.java
+          |   |   |-- DepartureQueries.java
+          |   |   |-- ReviewQueries.java
+          |   |   |-- TripQueries.java
+          |   |   `-- UserQueries.java
+          |   |-- main
+          |   |   |-- controllers
+          |   |   |   |-- MainController.java
+          |   |   |   |-- NewReviewController.java
+          |   |   |   `-- NewTripController.java
+          |   |   |-- fxml
+          |   |   |   |-- Main.fxml
+          |   |   |   |-- NewReview.fxml
+          |   |   |   `-- NewTrip.fxml
+          |   |   |-- gui
+          |   |   |   |-- LoginDialog.java
+          |   |   |   `-- MainMenuBar.java
+          |   |   |-- utilities
+          |   |   |   |-- Account.java
+          |   |   |   |-- Language.java
+          |   |   |   |-- UTF8Control.java
+          |   |   |   `-- Utils.java
+          |   |   |-- API.java
+          |   |   `-- Main.java
+          |   |-- models
+          |   |   |-- utils
+          |   |   |   |-- BookingUtils.java
+          |   |   |   |-- CompanyUtils.java
+          |   |   |   |-- DepartureUtils.java
+          |   |   |   |-- ReviewUtils.java
+          |   |   |   |-- TripUtils.java
+          |   |   |   `-- UserUtils.java
+          |   |   |-- Booking.java
+          |   |   |-- Company.java
+          |   |   |-- Departure.java
+          |   |   |-- Enums.java
+          |   |   |-- JSON.java
+          |   |   |-- Review.java
+          |   |   |-- Trip.java
+          |   |   `-- User.java
+          |   `-- tests
+          |       |-- TestJunit.java
+          |       |-- TestRunner.java
+          |       `-- TestTripUtils.java
+          |-- languages_is.properties
+          `-- languages.properties
+          ```
         </section>
         <section>
           <section data-markdown>
-            ## API
+            ## Heroku & Modules
             ---
-            - asdasd
-            
+            #### Storing and accessing data
           </section>
-          <section>
-              <blockquote>
-                myquote
-              </blockquote>
-              <pre>
-                <code data-trim>
-                public static ArrayList&ltReview&gt getReviewsByRatingRange(double min, double max, boolean asc) {
-                  if (min < 0.0 || max > 5.0)
-                  throw new IllegalArgumentException("min has to be equal to or larger than 0.0 and max equal to or less than 5.0");
-                  
-                  JSONObject reviewJSON = new JSONObject();
-                  reviewJSON.put(resolveReview(reviewJSONenum.RATINGMIN), min);
-                  reviewJSON.put(resolveReview(reviewJSONenum.RATINGMAX), max);
-                  String ascOrDesc = "asc";
-                  if (!asc) ascOrDesc = "desc";
-                  reviewJSON.put(resolveReview(reviewJSONenum.ORDERBY), "rating " + ascOrDesc);
-                  
-                  ArrayList&ltReview&gt reviews = dynamicReviewQuery(reviewJSON);
-                    return reviews;
+          <section data-markdown>
+            ### `DbMain.java`
+            ---
+            ```java
+            private static void production() {
+              try {
+                String uri = "postgres://rsugtizrdafzct:984365342b0ea220bac9a7828d0ef1caa37724daff2c891f59a9aa16758e74e4@ec2-54-75-245-94.eu-west-1.compute.amazonaws.com:5432/d9pu9h02ajef6r";
+                URI db_uri = new URI(uri);
+          
+                db_url = "jdbc:postgresql://" + db_uri.getHost() + ':' + db_uri.getPort() + db_uri.getPath();
+                db_user = db_uri.getUserInfo().split(":")[0];
+                db_password = db_uri.getUserInfo().split(":")[1];
+              } catch (URISyntaxException e) {
+                System.err.println(e.getMessage());
+              }
+            }
+          
+            public static void connect() {
+              try {
+                conn = DriverManager.getConnection(db_url, db_user, db_password);
+                System.out.println("Connected to the PostgreSQL server successfully.");
+              } catch (SQLException e) {
+                System.err.println("connect() failed: " + e.getMessage());
+              }
+            }
+            ```
+          </section>
+          <section data-markdown>
+            ### `TripQueries.java`
+            ---
+            ```java
+            public static Trip getTripById(int tripId) {
+              String sql = "SELECT * FROM daytrip.trip WHERE id=?;";
+          
+              try (PreparedStatement pstmt = DbMain.conn.prepareStatement(sql)) {
+                pstmt.setInt(1, tripId);
+                ResultSet rs = pstmt.executeQuery();
+          
+                while (rs.next()) {
+                  return resultSetToTrip(rs, true);
                 }
-                </code>
-              </pre>
-            </section>
-            <section>
-                <blockquote>
-                    quote 2.0
-                </blockquote>
-                <pre>
-                  <code data-trim>
-                    public static ArrayList&ltReview&gt getPublicReviews() {
-                        JSONObject reviewJSON = new JSONObject();
-                        reviewJSON.put(resolveReview(reviewJSONenum.ISPUBLIC), "true");
-                        reviewJSON.put(resolveReview(reviewJSONenum.ORDERBY), "created desc");
-                    
-                        ArrayList&ltReview&gt reviews = dynamicReviewQuery(reviewJSON);
-                        return reviews;
-                      }
-                  </code>
-                </pre>
-              </section>
+              } catch (SQLException e) {
+                System.err.println("getTripById() failed: " + e.getMessage());
+              }
+              return null;
+            }
+            ```
+          </section>
+          <section data-markdown>
+            ### `Trip.java`
+            ```java   
+              public Trip(String n, Enums.Category c, int p, int d, int gs, Enums.Country co, Enums.City ci,
+                      Enums.Accessability a, Enums.Language l, Boolean s, String de, Company comp) {
+                name = n;
+                category = Enums.resolveCategory(c);
+                price = p;
+                duration = d;
+                groupSize = gs;
+                country = Enums.resolveCountry(co);
+                city = Enums.resolveCity(ci);
+                accessability = Enums.resolveAccessability(a);
+                language = Enums.resolveLanguage(l);
+                sustainable = s;
+                description = de;
+                company = comp;
+              }
+            ```
+          </section>
+        </section>
+        <section data-markdown>
+            ## User interface
+            ---
+            #### Demonstration of our interface
         </section>
         <section>
           <section data-markdown>
@@ -204,36 +225,12 @@
               </blockquote>
               <p class="fragment highlight-green">&#x2611</p>
               <blockquote>
-                As a foreigner, I want to find a tour that is guided in my own language, because I don't do English good
-              </blockquote>
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              <p class="fragment highlight-green">&#x2611</p>
-              <blockquote>
-                As an environmentalist, I want to be able to find tour operators that follow a good environmental policy, because I care about my environmental impact.
-              </blockquote>
-              <p class="fragment highlight-green">&#x2611</p>
-              <blockquote>
                 As a tourist, I want to be able to find tours with great accessibility, because I am disabled.
-              </blockquote>
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              <p class="fragment highlight-green">&#x2611</p>
-              <blockquote>
-                As a tourist, I want to find tours that do not involve large groups, because I am a very private person.
               </blockquote>
             </script>
           </section>
         </section>
         <section>
-          <section data-markdown>
-            ## GUI
-            ---
-          </section>
           <section data-markdown>
             <script type="text/template">
               ## Login
@@ -248,60 +245,41 @@
               <img data-src="./lib/images/settings-hq.gif" height="600"/>
             </script>
           </section>
-          <section data-markdown>
-            <script type="text/template">
-              ## Edit Trip
-              ---
-              <img data-src="./lib/images/edittrip-hq.gif" height="600"/>
-            </script>
-          </section>
         </section>
         <section>
           <section data-markdown>
+            ## Summary
+            ---
+            A retrospective on our project
+          </section>
+          <section data-markdown>
             <script type="text/template">
-              ## User stories
+              ## What went well?
               ---
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a tourist, I want to be able to find a bus sightseeing tour tomorrow morning, because I want to make the most of my time on vacation.
-              </blockquote>
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a tourist, I want to be able to find tours in my local area, because I will only be staying there.
-              </blockquote>
+              <div class="fragment"  data-fragment-index="1">
+                <p>Structuring a well organized database</p>
+              </div>
+              <div class="fragment"  data-fragment-index="2">
+                <p>this and that</p>
+              </div>
             </script>
           </section>
           <section data-markdown>
             <script type="text/template">
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a tourist, I want to find the cheapest tour available, because I am traveling on a budget.
-              </blockquote>
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a businessman, I want to able to find trips on a specific time period, because I will only be stopping by for a short time.
-              </blockquote>
+              ## What went wrong?
+              ---
+              <div class="fragment"  data-fragment-index="1">
+                <p>ddd</p>
+              </div>
+              <div class="fragment"  data-fragment-index="2">
+                <p>this and that</p>
+              </div>
             </script>
           </section>
           <section data-markdown>
-            <script type="text/template">
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a user, I want to see all the tour operators that offer a certain type of tours (f.x. River rafting), because I want to select the tour operator that I like best.
-              </blockquote>
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a user, I want to be able to order tour operators by their review score, because I only want to go with the best and most professional company.
-              </blockquote>
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              <p class="fragment highlight-red">&#x2612</p>
-              <blockquote>
-                As a tourist, I want to be able to select the type of tour right away, because I don’t want to scroll through tours that don’t interest me at all.
-              </blockquote>
-            </script>
+            ## Burndow chart
+            ---
+            ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
           </section>
         </section>
 			</div>
@@ -316,7 +294,7 @@
 			Reveal.initialize({
 
         width: "100%",
-        margin: 0.01,
+        margin: 0.1,
         theme: Reveal.getQueryHash().theme || 'default',
         // Transition style
         transition: Reveal.getQueryHash().transition || 'default',
